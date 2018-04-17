@@ -1,4 +1,4 @@
-- (see)[https://laracasts.com/series/real-time-laravel-with-socket-io/episodes/1]
+- [see](https://laracasts.com/series/real-time-laravel-with-socket-io/episodes/1)
 
 
  - install dependencies
