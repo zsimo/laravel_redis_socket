@@ -1,0 +1,14 @@
+{
+    "private": true,
+    "scripts": {
+        "start:redis": "./redis-4.0.9/src/redis-server",
+        "start:socket": "node server.js",
+        "start": "concurrently \"npm run start:redis\" \"npm run start:socket\""
+    },
+    "devDependencies": {},
+    "dependencies": {
+        "concurrently": "^3.5.1",
+        "ioredis": "^3.2.2",
+        "socket.io": "^2.1.0"
+    }
+}
