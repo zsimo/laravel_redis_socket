@@ -12,11 +12,11 @@
      ```
  - emit message
      ```sh
-     http://brunelleschi/~simone.sacchi/laravel_redis_socket/public/redis
+     http://APP_URL/laravel_redis_socket/public/redis
      ```
  - see messages
      ```sh
-     http://brunelleschi/~simone.sacchi/laravel_redis_socket/public/
+     http://APP_URL/laravel_redis_socket/public/
      ```
 
 - redis is installed locally. to install it separately:
