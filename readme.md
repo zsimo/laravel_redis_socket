@@ -6,6 +6,11 @@
      composer install
      yarn
      ```
+ - create and customize .env file and (if needed) the .htaccess file
+     ```sh
+     cp .env.example .env
+     cp ./public/.htaccess.example ./public/.htaccess
+     ```
  - launch redis e socket server
      ```sh
      npm start
