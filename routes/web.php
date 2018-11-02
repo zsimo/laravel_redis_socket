@@ -8,20 +8,17 @@ Route::get('/', function () {
 
 
 
-Route::get('/redis', function () {
-
+Route::get('/redis/{message?}', function ($message = 'default message') {
 
     $data = [
-        'event' => 'event_name',
-        'data' => 'socket message'
+        'event' => 'test-event',
+        'data' => $message
     ];
-
 
     // publish event with Redis directly
     Redis::publish('test-channel', json_encode($data));
 
-
-    return 'socket start';
+    return 'Redis::publish';
 });
 
 

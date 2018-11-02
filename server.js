@@ -5,9 +5,9 @@ var PORT = 3001;
 var server = require("http").Server();
 var io = require("socket.io")(server);
 io.on('connection', function(socket){
-  console.log("a user connected");
+    console.log("a user connected");
 
-    io.emit("connected");
+    socket.emit("connected");
 });
 server.listen(PORT);
 

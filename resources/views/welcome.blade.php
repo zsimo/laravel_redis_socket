@@ -23,7 +23,7 @@
                 write("connected");
             });
             
-            socket.on("test-channel:event_name", function (data) {
+            socket.on("test-channel:test-event", function (data) {
                 write(data);
             });
 
